@@ -192,6 +192,10 @@ PRODUCT_PACKAGES += \
 endif
 endif
 
+# Gnss
+ PRODUCT_PACKAGES += \
+     BaiduNetworkLocation
+     
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti
@@ -245,6 +249,10 @@ PRODUCT_PACKAGES += \
     media_codecs_performance_c2.xml \
     video_system_specs.json
 
+# Media - Dolby vision
+#PRODUCT_PACKAGES += \
+#    android.hardware.media.c2@1.2.vendor
+    
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
@@ -268,7 +276,7 @@ TARGET_SUPPORTS_OMX_SERVICE := false
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
-
+     
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
 
