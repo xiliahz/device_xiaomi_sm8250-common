@@ -192,7 +192,6 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set,surfaceflinger,udfps_lib,//hardware/xiaomi:libudfps_extension.xiaomi)
 endif
-endif
 
 # Health
 PRODUCT_PACKAGES += \
